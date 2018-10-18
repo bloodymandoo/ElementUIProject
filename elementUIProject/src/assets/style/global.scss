@@ -1,0 +1,17 @@
+
+@import 'reset.css';
+html,body{
+  height:100%;
+  width:100%;
+}
+ 
+$fontSize:37.5;
+@function px2rem($px){
+  @return $px/$fontSize*1rem;
+}
+ 
+@mixin center {
+  display: flex;
+  justify-content:center;
+  align-content: center;
+}
